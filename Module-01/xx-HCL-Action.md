@@ -1,4 +1,4 @@
-### 1.2: Getting Started with HCL
+### HCL in Action
 
 #### 1.2.1 Installing Required Tools
 

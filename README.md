@@ -1,22 +1,26 @@
-## Mastering HCL (HashiCorp Configuration Language)
+# Mastering HCL (HashiCorp Configuration Language)
 
-### Module 1: Introduction to Infrastructure as Code (IaC) and HCL
+# < --- In Progress --- >
 
-#### [1.1 Understanding Infrastructure as Code](./Module-01/1.1-Understaning-IaC.md)
+## Module 1: Introduction to Infrastructure as Code (IaC) and HCL
+
+### [1.1 Understanding Infrastructure as Code](./Module-01/1.1-Understaning-IaC.md)
 
 - Definition and benefits of IaC
 - Role of HCL in IaC workflows
 - Overview of HashiCorp tools using HCL (Terraform, Packer, Consul)
 
-#### [xx Getting Started with HCL](./Module-01/1.1-Getting-Started-With-HCL.md)
+### [1.2 HCL Syntax Fundamentals](./Module-01/1.2-HCL-Syntax.md)
 
-#### [1.2 HCL Syntax Fundamentals](./Module-01/1.2-HCL-Syntax.md)
+#### [1.2.1 Blocks](./Module-01/1.2.1-Blocks.md)
 
-- Blocks, types, and parameters
-- Variables and data types
-- Comments and documentation
+#### [1.2.2 Variables and data types](./Module-01/1.2.2-Variables-data-types.md)
 
-### Module 2: Basic HCL Concepts
+#### [1.2.3 Comments and documentation](./Module-01/1.2.3-Comments-documentation.md)
+
+### [xx HCL in Action (Optional)](./Module-01/xx-HCL-Action.md)
+
+## Module 2: Basic HCL Concepts
 
 #### 2.1 Working with Variables
 
