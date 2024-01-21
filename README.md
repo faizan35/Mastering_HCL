@@ -22,19 +22,17 @@
 
 ## Module 2: Basic HCL Concepts
 
-#### 2.1 Working with Variables
+### [2.1 More on variables](./Module-02/2.1-More-variables.md)
 
-- Variable types and scope
 - Default values and variable interpolation
 - Understanding variable precedence
 
-#### 2.2 Lists and Maps
+#### [2.2 Lists and Maps](./Module-02/2.2-Lists-Maps.md)
 
 - Creating and manipulating lists
 - Utilizing maps for key-value pairs
-- Complex data structures in HCL
 
-#### 2.3 Control Flow in HCL
+#### [2.3 Control Flow in HCL](./Module-02/2.3-Control-Flow.md)
 
 - Conditional statements with `if` and `else`
 - Loops and iterations
