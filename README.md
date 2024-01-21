@@ -26,6 +26,7 @@
 
 - Default values and variable interpolation
 - Understanding variable precedence
+- Special Variables in Terraform
 
 #### [2.2 Lists and Maps](./Module-02/2.2-Lists-Maps.md)
 
