@@ -41,13 +41,13 @@
 
 ### Module 3: Organizing HCL Code
 
-#### 3.1 Modularization in HCL
+#### [3.1 Modularization in HCL](./Module-03/3.1-Modularization.md)
 
 - Defining and creating modules
 - Module structure and best practices
 - Reusable components in HCL
 
-#### 3.2 Managing Configurations
+#### [3.2 Managing Configurations](./Module-03/3.2-Managing-Configurations.md)
 
 - Configuration files and their organization
 - Creating and managing multiple environments
