@@ -75,7 +75,7 @@
 
 ### Module 5: Real-world HCL Projects
 
-#### 5.1 Building Infrastructure with Terraform
+#### [5.1 Building Infrastructure with Terraform](./Module-05/5.1-Building-Infrastructure.md)
 
 - Creating and managing virtual machines
 - Networking configurations
