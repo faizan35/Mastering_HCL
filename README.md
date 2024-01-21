@@ -55,19 +55,19 @@
 
 ### Module 4: Advanced HCL Topics
 
-#### 4.1 Functions in HCL
+#### [4.1 Functions in HCL](./Module-04/4.1-Functions.md)
 
 - Exploring built-in functions
 - Creating custom functions
 - Advanced string manipulation and mathematical operations
 
-#### 4.2 Working with Providers
+#### [4.2 Working with Providers](./Module-04/4.2-Working-Providers.md)
 
 - Understanding providers in HCL
 - Configuring and using providers (e.g., AWS, Azure)
 - Handling multiple providers in a single configuration
 
-#### 4.3 Error Handling and Debugging
+#### [4.3 Error Handling and Debugging](./Module-04/4.3-Error-Handling-Debugging.md)
 
 - Debugging techniques in HCL
 - Handling errors gracefully
