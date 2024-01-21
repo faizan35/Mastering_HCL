@@ -101,13 +101,12 @@
 - Efficient resource usage
 - Strategies for code optimization
 
-### Module 7: Final Project and Certification
+### Module 7: Application in DevOps Workflows
 
-#### 7.1 Capstone Project
+#### 7.1 Integration with CI/CD
 
-- Applying HCL skills to a real-world scenario
-- Creating an end-to-end infrastructure project
+- Incorporating HCL in continuous integration and delivery pipelines
 
-#### 7.2 Certification Exam
+#### 7.2 Infrastructure Orchestration
 
-- Preparation for HashiCorp Certified - Terraform Associate (Optional)
+- Coordinating infrastructure changes with other DevOps processes
