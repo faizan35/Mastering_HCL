@@ -1,112 +1,139 @@
-# Mastering HCL (HashiCorp Configuration Language)
+# HashiCorp Configuration Language (HCL) Learning Syllabus
 
-# < --- In Progress --- >
+## Chapter 0: Introduction to HCL
 
-## Module 1: Introduction to Infrastructure as Code (IaC) and HCL
+- What is HCL?
+- HCL vs JSON/YAML
+- Where is HCL used? (Overview: Terraform, Nomad, Consul, Vault, Packer)
+- HCL Versions: HCL1 vs HCL2
+- Installing and using HCL CLI (`hclfmt`, `hcl2json`, etc.)
 
-### [1.1 Understanding Infrastructure as Code](./Module-01/1.1-Understaning-IaC.md)
+## Chapter 1: HCL Syntax Fundamentals
 
-- Definition and benefits of IaC
-- Role of HCL in IaC workflows
-- Overview of HashiCorp tools using HCL (Terraform, Packer, Consul)
+- File structure and extensions (`.hcl`)
+- Comments (`#`, `//`, `/* */`)
+- Blocks
 
-### [1.2 HCL Syntax Fundamentals](./Module-01/1.2-HCL-Syntax.md)
+  - Structure: `block_type "label1" "label2" { ... }`
+  - Nested blocks
 
-#### [1.2.1 Blocks](./Module-01/1.2.1-Blocks.md)
+- Attributes
 
-#### [1.2.2 Variables and data types](./Module-01/1.2.2-Variables-data-types.md)
+  - Key-value pairs
+  - Attribute ordering and formatting
 
-#### [1.2.3 Comments and documentation](./Module-01/1.2.3-Comments-documentation.md)
+- Whitespace and formatting rules
 
-### [xx HCL in Action (Optional)](./Module-01/xx-HCL-Action.md)
+## Chapter 2: Data Types
 
-## Module 2: Basic HCL Concepts
+- Primitive types
 
-### [2.1 More on variables](./Module-02/2.1-More-variables.md)
+  - String
+  - Number
+  - Boolean
 
-- Default values and variable interpolation
-- Understanding variable precedence
-- Special Variables in Terraform
+- Complex types
 
-#### [2.2 Lists and Maps](./Module-02/2.2-Lists-Maps.md)
+  - List
+  - Tuple
+  - Map
+  - Object
 
-- Creating and manipulating lists
-- Utilizing maps for key-value pairs
+- Null values and nullability
+- Type conversion functions
 
-#### [2.3 Control Flow in HCL](./Module-02/2.3-Control-Flow.md)
+## Chapter 3: Expressions
 
-- Conditional statements with `if` and `else`
-- Loops and iterations
-- Best practices for effective control flow
+- Expression syntax: `${ ... }` and direct use
+- Operators
 
-### Module 3: Organizing HCL Code
+  - Arithmetic: `+`, `-`, `*`, `/`, `%`
+  - Comparison: `==`, `!=`, `<`, `>`, `<=`, `>=`
+  - Logical: `&&`, `||`, `!`
 
-#### [3.1 Modularization in HCL](./Module-03/3.1-Modularization.md)
+- String interpolation and concatenation
+- Conditional expressions: `condition ? true_val : false_val`
 
-- Defining and creating modules
-- Module structure and best practices
-- Reusable components in HCL
+## Chapter 4: Loops and Dynamic Constructs
 
-#### [3.2 Managing Configurations](./Module-03/3.2-Managing-Configurations.md)
+- `for` expressions
 
-- Configuration files and their organization
-- Creating and managing multiple environments
-- Version control with Git and HCL
+  - List comprehensions: `[for item in list : item.attr]`
+  - Map comprehensions
 
-### Module 4: Advanced HCL Topics
+- Filtering using `if` in comprehensions
+- Dynamic blocks (explained as an HCL pattern)
 
-#### [4.1 Functions in HCL](./Module-04/4.1-Functions.md)
+## Chapter 5: Variables and Locals
 
-- Exploring built-in functions
-- Creating custom functions
-- Advanced string manipulation and mathematical operations
+- Input variables
 
-#### [4.2 Working with Providers](./Module-04/4.2-Working-Providers.md)
+  - Declaring and referencing variables
+  - Variable types and default values
 
-- Understanding providers in HCL
-- Configuring and using providers (e.g., AWS, Azure)
-- Handling multiple providers in a single configuration
+- Locals
 
-#### [4.3 Error Handling and Debugging](./Module-04/4.3-Error-Handling-Debugging.md)
+  - Defining intermediate expressions
+  - Scoping and reuse
 
-- Debugging techniques in HCL
-- Handling errors gracefully
-- Best practices for troubleshooting
+- Overriding values (conceptual, not tool-specific)
 
-### Module 5: Real-world HCL Projects
+## Chapter 6: Functions
 
-#### [5.1 Building Infrastructure with Terraform](./Module-05/5.1-Building-Infrastructure.md)
+- String functions
 
-- Creating and managing virtual machines
-- Networking configurations
-- Resource dependencies and outputs
+  - `length`, `substr`, `replace`, `split`, `join`, `trim`, `lower`, `upper`
 
-#### 5.2 Creating Custom Machine Images with Packer
+- Numeric functions
 
-- Writing Packer templates in HCL
-- Building custom images for different platforms
-- Integrating Packer with other HashiCorp tools
+  - `abs`, `ceil`, `floor`, `max`, `min`
 
-### Module 6: Best Practices and Optimization
+- Collection functions
 
-#### 6.1 HCL Best Practices
+  - `contains`, `distinct`, `flatten`, `merge`, `keys`, `values`, `zipmap`, `slice`
 
-- Code readability and maintainability
-- Naming conventions
-- Documentation standards
+- Type functions
 
-#### 6.2 Optimizing HCL Code
+  - `tostring`, `tonumber`, `can`, `try`
 
-- Performance considerations
-- Efficient resource usage
-- Strategies for code optimization
+- Function composition and nesting
 
-### Module 7: Application in DevOps Workflows
+## Chapter 7: Complex Type Systems and Type Constraints
 
-#### 7.1 Integration with CI/CD
+- Overview of type systems
+- Strict typing with:
 
-- Incorporating HCL in continuous integration and delivery pipelines
+  - Object types with nested fields
+  - Tuple types with defined structure
 
-#### 7.2 Infrastructure Orchestration
+- Type constraint definitions
+- Schema and validation logic
 
-- Coordinating infrastructure changes with other DevOps processes
+## Chapter 8: Validation and Error Handling
+
+- Conditional validation
+- Custom error messages for incorrect input
+- Fallback and exception-safe logic using `try()` and `can()`
+
+## Chapter 9: File Inclusion and Templates
+
+- Reading external files using `file()`
+- Using `templatefile()` for dynamic configuration
+- Embedding configuration templates
+- Working with `filebase64()`, `jsondecode()`, and `yamldecode()`
+
+## Chapter 10: Tooling for HCL
+
+- Using `hclfmt` for formatting
+- Using `hcl2json` for conversion
+- Static analysis and schema validation tools
+- Editor support and syntax highlighting
+- Integrating HCL into CI/CD workflows
+
+## Chapter 11: HCL for Tool Builders
+
+- Parsing HCL with Go (`go-hcl`, `hclparse`, `hclsyntax`)
+- Tokenization and decoding into Go structs
+- Validation with Go-based HCL schema
+- Creating custom configuration formats using HCL
+- Building a CLI that reads and validates HCL input
