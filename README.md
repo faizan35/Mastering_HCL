@@ -1,6 +1,6 @@
 # HashiCorp Configuration Language (HCL) Learning Syllabus
 
-## Chapter 0: Introduction to HCL
+## [Chapter 0: Introduction to HCL](./00_Introduction_to_HCL.md)
 
 - What is HCL?
 - HCL vs JSON/YAML
@@ -8,7 +8,7 @@
 - HCL Versions: HCL1 vs HCL2
 - Installing and using HCL CLI (`hclfmt`, `hcl2json`, etc.)
 
-## Chapter 1: HCL Syntax Fundamentals
+## [Chapter 1: HCL Syntax Fundamentals](./01_HCL_Syntax_Fundamentals.md)
 
 - File structure and extensions (`.hcl`)
 - Comments (`#`, `//`, `/* */`)
@@ -24,7 +24,7 @@
 
 - Whitespace and formatting rules
 
-## Chapter 2: Data Types
+## [Chapter 2: Data Types](./02_Data_Types.md)
 
 - Primitive types
 
@@ -42,7 +42,7 @@
 - Null values and nullability
 - Type conversion functions
 
-## Chapter 3: Expressions
+## [Chapter 3: Expressions](./03_Expressions.md)
 
 - Expression syntax: `${ ... }` and direct use
 - Operators
@@ -54,7 +54,7 @@
 - String interpolation and concatenation
 - Conditional expressions: `condition ? true_val : false_val`
 
-## Chapter 4: Loops and Dynamic Constructs
+## [Chapter 4: Loops and Dynamic Constructs](./04_Loops_and_Dynamic_Constructs.md)
 
 - `for` expressions
 
@@ -64,7 +64,7 @@
 - Filtering using `if` in comprehensions
 - Dynamic blocks (explained as an HCL pattern)
 
-## Chapter 5: Variables and Locals
+## [Chapter 5: Variables and Locals](./05_Variables_and_Locals.md)
 
 - Input variables
 
@@ -78,7 +78,7 @@
 
 - Overriding values (conceptual, not tool-specific)
 
-## Chapter 6: Functions
+## [Chapter 6: Functions](./06_Functions.md)
 
 - String functions
 
@@ -98,7 +98,7 @@
 
 - Function composition and nesting
 
-## Chapter 7: Complex Type Systems and Type Constraints
+## [Chapter 7: Complex Type Systems and Type Constraints](./07_Complex_Type_Systems_and_Type_Constraints.md)
 
 - Overview of type systems
 - Strict typing with:
@@ -109,20 +109,20 @@
 - Type constraint definitions
 - Schema and validation logic
 
-## Chapter 8: Validation and Error Handling
+## [Chapter 8: Validation and Error Handling](./08_Validation_and_Error_Handling.md)
 
 - Conditional validation
 - Custom error messages for incorrect input
 - Fallback and exception-safe logic using `try()` and `can()`
 
-## Chapter 9: File Inclusion and Templates
+## [Chapter 9: File Inclusion and Templates](./09_File_Inclusion_and_Templates.md)
 
 - Reading external files using `file()`
 - Using `templatefile()` for dynamic configuration
 - Embedding configuration templates
 - Working with `filebase64()`, `jsondecode()`, and `yamldecode()`
 
-## Chapter 10: Tooling for HCL
+## [Chapter 10: Tooling for HCL](./10_Tooling_for_HCL.md)
 
 - Using `hclfmt` for formatting
 - Using `hcl2json` for conversion
@@ -130,7 +130,7 @@
 - Editor support and syntax highlighting
 - Integrating HCL into CI/CD workflows
 
-## Chapter 11: HCL for Tool Builders
+## [Chapter 11: HCL for Tool Builders](./11_HCL_for_Tool_Builders.md)
 
 - Parsing HCL with Go (`go-hcl`, `hclparse`, `hclsyntax`)
 - Tokenization and decoding into Go structs
